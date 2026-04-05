@@ -79,12 +79,6 @@ CBS Algorithm:
 - Provides detailed statistics and analysis
 - Tracks solving time and performance metrics
 
-#### 6. **Visualization** (`visualization.py`)
-- **Static Visualization**: Shows all paths overlaid on grid
-- **Animated Visualization**: Time-step animation of droplet movements
-- **Comparison Figures**: Before/after positions
-- **Statistics Display**: Bottleneck analysis, wait action tracking
-
 ---
 
 ## CSP Formulation
@@ -184,25 +178,6 @@ for x in range(5, 10):
 # The A* algorithm automatically avoids obstacls
 ```
 
-### Visualization
-
-```python
-from visualization import MicrofluidicVisualizer
-
-visualizer = MicrofluidicVisualizer(grid, droplets, solution)
-
-# Static plot
-fig, ax = visualizer.plot_static(title="Microfluidic Routing")
-
-# Animation
-fig, anim = visualizer.animate(interval=500)
-
-# Statistics
-visualizer.show_statistics()
-```
-
----
-
 ## Constraint Application Example
 
 ### Scenario: Two Droplets Colliding
@@ -300,7 +275,7 @@ AIFA Project/
 ├── collision.py         # Collision detection
 ├── cbs.py               # Conflict-Based Search algorithm
 ├── solver.py            # MAPF solver orchestration
-├── visualization.py     # 2D visualization and animation
+├── animate.py           # 2D visualization and animation
 ├── main.py              # Example scenarios and testing
 ├── requirements.txt     # Python dependencies
 └── README.md           # This file
