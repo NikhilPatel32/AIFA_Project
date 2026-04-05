@@ -304,9 +304,8 @@ python3 main.py
 ```
 
 ### Create Animation
-```python
-# In main.py, uncomment the animation section:
-create_animated_demo()
+```
+python animate.py
 ```
 
 ---
